@@ -1,0 +1,14 @@
+{
+    "crops": [
+        {
+            "id": 1,
+            "name": "Carrots",
+            "suhuMax (C)" : 20,
+            "suhuMin (C)" : 26,
+            "kebutuhanAirMax (%)" : 10,
+            "kebutuhanAirMin (%)" : 40,
+            "kelembabanUdaraMax (%)" : 98,
+            "kelembabanUdaraMin (%)" : 95
+        }
+    ]
+}

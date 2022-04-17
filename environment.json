@@ -1,0 +1,130 @@
+{
+    "environment": [
+        {
+            "id" : 1,
+            "Intensitas Cahaya (lux)": 225,
+            "Air Hujan": 1,
+            "Suhu (C)": 25,
+            "Kelembaban Udara (%)" : 91,
+            "Tekanan Udara (hPa)" : 1002,
+            "Kelembaban Tanah" : 34
+        },
+        {
+            "id" : 2,
+            "Intensitas Cahaya (lux)": 226,
+            "Air Hujan": 1,
+            "Suhu (C)": 25,
+            "Kelembaban Udara (%)" : 90,
+            "Tekanan Udara (hPa)" : 1002,
+            "Kelembaban Tanah" : 35
+        },
+        {
+            "id" : 3,
+            "Intensitas Cahaya (lux)": 225,
+            "Air Hujan": 1,
+            "Suhu (C)": 26,
+            "Kelembaban Udara (%)" : 93,
+            "Tekanan Udara (hPa)" : 1003,
+            "Kelembaban Tanah" : 36
+        },
+        {
+            "id" : 4,
+            "Intensitas Cahaya (lux)": 224,
+            "Air Hujan": 1,
+            "Suhu (C)": 25,
+            "Kelembaban Udara (%)" : 93,
+            "Tekanan Udara (hPa)" : 1002,
+            "Kelembaban Tanah" : 35
+        },
+        {
+            "id" : 5,
+            "Intensitas Cahaya (lux)": 225,
+            "Air Hujan": 1,
+            "Suhu (C)": 26,
+            "Kelembaban Udara (%)" : 92,
+            "Tekanan Udara (hPa)" : 1003,
+            "Kelembaban Tanah" : 37
+        },
+        {
+            "id" : 6,
+            "Intensitas Cahaya (lux)": 226,
+            "Air Hujan": 1,
+            "Suhu (C)": 26,
+            "Kelembaban Udara (%)" : 91,
+            "Tekanan Udara (hPa)" : 1002,
+            "Kelembaban Tanah" : 38
+        },
+        {
+            "id" : 7,
+            "Intensitas Cahaya (lux)": 227,
+            "Air Hujan": 1,
+            "Suhu (C)": 25,
+            "Kelembaban Udara (%)" : 93,
+            "Tekanan Udara (hPa)" : 1003,
+            "Kelembaban Tanah" : 36
+        },
+        {
+            "id" : 8,
+            "Intensitas Cahaya (lux)": 325,
+            "Air Hujan": 0,
+            "Suhu (C)": 28,
+            "Kelembaban Udara (%)" : 76,
+            "Tekanan Udara (hPa)" : 1012,
+            "Kelembaban Tanah" : 25
+        },
+        {
+            "id" : 9,
+            "Intensitas Cahaya (lux)": 327,
+            "Air Hujan": 0,
+            "Suhu (C)": 29,
+            "Kelembaban Udara (%)" : 77,
+            "Tekanan Udara (hPa)" : 1012,
+            "Kelembaban Tanah" : 24
+        },
+        {
+            "id" : 10,
+            "Intensitas Cahaya (lux)": 326,
+            "Air Hujan": 0,
+            "Suhu (C)": 29,
+            "Kelembaban Udara (%)" : 78,
+            "Tekanan Udara (hPa)" : 1013,
+            "Kelembaban Tanah" : 26
+        },
+        {
+            "id" : 11,
+            "Intensitas Cahaya (lux)": 326,
+            "Air Hujan": 0,
+            "Suhu (C)": 28,
+            "Kelembaban Udara (%)" : 74,
+            "Tekanan Udara (hPa)" : 1012,
+            "Kelembaban Tanah" : 27
+        },
+        {
+            "id" : 12,
+            "Intensitas Cahaya (lux)": 324,
+            "Air Hujan": 0,
+            "Suhu (C)": 28,
+            "Kelembaban Udara (%)" : 75,
+            "Tekanan Udara (hPa)" : 1013,
+            "Kelembaban Tanah" : 25
+        },
+        {
+            "id" : 13,
+            "Intensitas Cahaya (lux)": 327,
+            "Air Hujan": 0,
+            "Suhu (C)": 29,
+            "Kelembaban Udara (%)" : 76,
+            "Tekanan Udara (hPa)" : 1013,
+            "Kelembaban Tanah" : 26
+        },
+        {
+            "id" : 14,
+            "Intensitas Cahaya (lux)": 325,
+            "Air Hujan": 0,
+            "Suhu (C)": 28,
+            "Kelembaban Udara (%)" : 74,
+            "Tekanan Udara (hPa)" : 1012,
+            "Kelembaban Tanah" : 24
+        },
+    ]
+}
