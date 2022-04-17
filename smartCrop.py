@@ -15,6 +15,7 @@ with open("crops.json", "r") as read_file:
 with open("nutrients.json", "r") as read_file:
     nutrients = json.load(read_file)
 
+
 app = FastAPI(title="Smart crop monitoring and recommendation")
 
 
@@ -37,7 +38,7 @@ async def read_all_data_nutrients():
 
 @app.get("/crops/{crop_id}")
 async def read_crop_info(crop_id: int):
-    for crop in nutrients['nutrients']:
+    for crop in crops['crops']:
         if crop['id'] == crop_id:
             return crop
     raise HTTPException(
