@@ -56,3 +56,5 @@ async def read_nutrient_info(nutrient_id: int):
         status_code=404,
         detail=f'data tidak ditemukan'
     )
+
+#uvicorn smartCrop:app --reload
