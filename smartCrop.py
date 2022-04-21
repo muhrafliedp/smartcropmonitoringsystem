@@ -21,15 +21,18 @@ app = FastAPI(title="Smart crop monitoring and recommendation")
 
 @app.get("/")
 def root():
-    return ("Lest Farm !!")
+    return ("Let's Farm !!")
+
 
 @app.get("/environment")
 async def read_all_data_environment():
     return environment
 
+
 @app.get("/crops")
 async def read_all_data_crops():
     return crops
+
 
 @app.get("/nutrients")
 async def read_all_data_nutrients():
@@ -57,4 +60,4 @@ async def read_nutrient_info(nutrient_id: int):
         detail=f'data tidak ditemukan'
     )
 
-#uvicorn smartCrop:app --reload
+# uvicorn smartCrop:app --reload
