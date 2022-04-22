@@ -1,5 +1,5 @@
 {
-    "environment": [
+    "environments": [
         {
             "id" : 1,
             "Intensitas Cahaya (lux)": 225,

@@ -5,7 +5,7 @@ from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 
 with open("json/environment.json", "r") as read_file:
-    environment = json.load(read_file)
+    environments = json.load(read_file)
 
 with open("json/crops.json", "r") as read_file:
     crops = json.load(read_file)
@@ -24,7 +24,7 @@ def root():
 
 @app.get("/environment")
 async def read_all_data_environment():
-    return environment
+    return environments
 
 
 @app.get("/crops")
@@ -57,5 +57,43 @@ async def read_nutrient_info(nutrient_id: int):
         status_code=404,
         detail=f'data tidak ditemukan'
     )
+
+
+@app.get("/crops_recommendation/{environment_id}")
+async def crops_recommendation(environment_id: int):
+    for environment in environments['environments']:
+        if environment['id'] == environment_id:
+            intensitasCahayaLingkungan = environment['Intensitas Cahaya (lux)']
+            suhuLingkungan = environment['Suhu (C)']
+            kelembabanUdaraLingkungan = environment['Kelembaban Udara (%)']
+
+    dataCrops = []
+    for crop in crops['crops']:
+        nilaiMinusIntensitasCahaya = getNegativePoint(
+            crop["intensitasCahayaMin"], crop["intensitasCahayaMax"], intensitasCahayaLingkungan)//10
+        nilaiMinusSuhu = getNegativePoint(
+            crop["suhuMin (C)"], crop["suhuMax (C)"], suhuLingkungan)
+        nilaiMinusKelembabanUdara = getNegativePoint(
+            crop["kelembabanUdaraMin (%)"], crop["kelembabanUdaraMax (%)"], kelembabanUdaraLingkungan)
+
+        nilaiMinusAkhir = nilaiMinusIntensitasCahaya + \
+            nilaiMinusSuhu + nilaiMinusKelembabanUdara
+
+        dataCrop = ["" for i in range(2)]
+        dataCrop[0] = crop["name"]
+        dataCrop[1] = nilaiMinusAkhir
+        dataCrops.append(dataCrop)
+    dataCrops = sorted(dataCrops, key=lambda x: x[1], reverse=True)
+    return {dataCrops[0][0], dataCrops[1][0], dataCrops[2][0]}
+
+
+def getNegativePoint(minValue, maxValue, environmentValue):
+    if (environmentValue >= minValue) and (environmentValue <= maxValue):
+        return 0
+    elif (environmentValue > maxValue):
+        return maxValue-environmentValue
+    else:
+        return environmentValue-minValue
+
 
 # uvicorn smartCrop:app --reload
