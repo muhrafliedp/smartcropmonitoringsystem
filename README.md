@@ -1,1 +1,1 @@
-# smartmonitoringcropsystem
+# smart-crop-monitoring-system
