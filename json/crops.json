@@ -3,12 +3,74 @@
         {
             "id": 1,
             "name": "Wortel",
+            "intensitasCahayaMax" : 230,
+            "intensitasCahayaMin" : 200,
             "suhuMax (C)" : 20,
             "suhuMin (C)" : 26,
-            "kebutuhanAirMax (%)" : 10,
-            "kebutuhanAirMin (%)" : 40,
+            "kebutuhanAirMax (%)" : 40,
+            "kebutuhanAirMin (%)" : 10,
             "kelembabanUdaraMax (%)" : 98,
             "kelembabanUdaraMin (%)" : 95
+        },
+        {
+            "id": 2,
+            "name": "Tanaman Rempah",
+            "intensitasCahayaMax" : 230,
+            "intensitasCahayaMin" : 200,
+            "suhuMax (C)" : 25,
+            "suhuMin (C)" : 21,
+            "kebutuhanAirMax (%)" : 40,
+            "kebutuhanAirMin (%)" : 10,
+            "kelembabanUdaraMax (%)": 70,
+            "kelembabanUdaraMin (%)" : 40
+        },
+        {
+            "id": 3,
+            "name": "Tomat",
+            "intensitasCahayaMax" : 230,
+            "intensitasCahayaMin" : 200,
+            "suhuMax (C)" : 23,
+            "suhuMin (C)" : 20,
+            "kebutuhanAirMax (%)" : 40,
+            "kebutuhanAirMin (%)" : 10,
+            "kelembabanUdaraMax (%)" : 90,
+            "kelembabanUdaraMin (%)" : 65
+        },
+        {
+            "id": 4,
+            "name": "Padi",
+            "intensitasCahayaMax" : 330,
+            "intensitasCahayaMin" : 300,
+            "suhuMax (C)" : 25,
+            "suhuMin (C)" : 23,
+            "kebutuhanAirMax (%)" : 100,
+            "kebutuhanAirMin (%)" : 70,
+            "kelembabanUdaraMax (%)" : 85,
+            "kelembabanUdaraMin (%)" : 75
+        },
+        {
+            "id": 5,
+            "name": "Kangkung",
+            "intensitasCahayaMax" : 330,
+            "intensitasCahayaMin" : 300,
+            "suhuMax (C)" : 28,
+            "suhuMin (C)" : 20,
+            "kebutuhanAirMax (%)" : 100,
+            "kebutuhanAirMin (%)" : 70,
+            "kelembabanUdaraMax (%)" : 90,
+            "kelembabanUdaraMin (%)" : 60
+        },
+        {
+            "id": 6,
+            "name": "Sawi",
+            "intensitasCahayaMax" : 330,
+            "intensitasCahayaMin" : 300,
+            "suhuMax (C)" : 23,
+            "suhuMin (C)" : 20,
+            "kebutuhanAirMax (%)" : 100,
+            "kebutuhanAirMin (%)" : 70,
+            "kelembabanUdaraMax (%)" : 90,
+            "kelembabanUdaraMin (%)" : 80
         }
     ]
 }
