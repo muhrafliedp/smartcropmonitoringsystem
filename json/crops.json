@@ -2,7 +2,7 @@
     "crops": [
         {
             "id": 1,
-            "name": "Carrots",
+            "name": "Wortel",
             "suhuMax (C)" : 20,
             "suhuMin (C)" : 26,
             "kebutuhanAirMax (%)" : 10,

@@ -1,18 +1,16 @@
-from os import write
 import uvicorn
 import json
-import requests
 from fastapi import FastAPI, HTTPException, status
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 
-with open("environment.json", "r") as read_file:
+with open("json/environment.json", "r") as read_file:
     environment = json.load(read_file)
 
-with open("crops.json", "r") as read_file:
+with open("json/crops.json", "r") as read_file:
     crops = json.load(read_file)
 
-with open("nutrients.json", "r") as read_file:
+with open("json/nutrients.json", "r") as read_file:
     nutrients = json.load(read_file)
 
 
