@@ -66,6 +66,9 @@ async def crops_recommendation(environment_id: int):
             intensitasCahayaLingkungan = environment['Intensitas Cahaya (lux)']
             suhuLingkungan = environment['Suhu (C)']
             kelembabanUdaraLingkungan = environment['Kelembaban Udara (%)']
+            kelembabanTanahLingkungan = environment['Kelembaban Tanah (%)']
+            tekananUdaraLingkungan = environment['Tekanan Udara (hPa)']
+            hujanLingkungan = environment['Air Hujan']
 
     dataCrops = []
     for crop in crops['crops']:
@@ -75,16 +78,22 @@ async def crops_recommendation(environment_id: int):
             crop["suhuMin (C)"], crop["suhuMax (C)"], suhuLingkungan)
         nilaiMinusKelembabanUdara = getNegativePoint(
             crop["kelembabanUdaraMin (%)"], crop["kelembabanUdaraMax (%)"], kelembabanUdaraLingkungan)
+        nilaiMinusKelembabanTanah = getNegativePoint(
+            crop["kelembabanTanahMin (%)"], crop["kelembabanTanahMax (%)"], kelembabanTanahLingkungan)
+        nilaiMinusTekananUdara = getNegativePoint(
+            crop["tekananUdaraMin (hPa)"], crop["tekananUdaraMax (hPa)"], tekananUdaraLingkungan)
+        nilaiMinusHujan = abs(crop["hujan"] - hujanLingkungan)*10
 
         nilaiMinusAkhir = nilaiMinusIntensitasCahaya + \
-            nilaiMinusSuhu + nilaiMinusKelembabanUdara
+            nilaiMinusSuhu + nilaiMinusKelembabanUdara + \
+            nilaiMinusKelembabanTanah + nilaiMinusTekananUdara + nilaiMinusHujan
 
         dataCrop = ["" for i in range(2)]
         dataCrop[0] = crop["name"]
         dataCrop[1] = nilaiMinusAkhir
         dataCrops.append(dataCrop)
     dataCrops = sorted(dataCrops, key=lambda x: x[1], reverse=True)
-    return {dataCrops[0][0], dataCrops[1][0], dataCrops[2][0]}
+    return {dataCrops[0][0], dataCrops[1][0], dataCrops[2][0], dataCrops[3][0]}
 
 
 def getNegativePoint(minValue, maxValue, environmentValue):
