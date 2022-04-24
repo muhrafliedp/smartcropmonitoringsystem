@@ -7,7 +7,7 @@
             "Suhu (C)": 25,
             "Kelembaban Udara (%)" : 91,
             "Tekanan Udara (hPa)" : 1002,
-            "Kelembaban Tanah" : 34
+            "Kelembaban Tanah (%)" : 34
         },
         {
             "id" : 2,
@@ -16,7 +16,7 @@
             "Suhu (C)": 25,
             "Kelembaban Udara (%)" : 90,
             "Tekanan Udara (hPa)" : 1002,
-            "Kelembaban Tanah" : 35
+            "Kelembaban Tanah (%)" : 35
         },
         {
             "id" : 3,
@@ -25,7 +25,7 @@
             "Suhu (C)": 26,
             "Kelembaban Udara (%)" : 93,
             "Tekanan Udara (hPa)" : 1003,
-            "Kelembaban Tanah" : 36
+            "Kelembaban Tanah (%)" : 36
         },
         {
             "id" : 4,
@@ -34,7 +34,7 @@
             "Suhu (C)": 25,
             "Kelembaban Udara (%)" : 93,
             "Tekanan Udara (hPa)" : 1002,
-            "Kelembaban Tanah" : 35
+            "Kelembaban Tanah (%)" : 35
         },
         {
             "id" : 5,
@@ -43,7 +43,7 @@
             "Suhu (C)": 26,
             "Kelembaban Udara (%)" : 92,
             "Tekanan Udara (hPa)" : 1003,
-            "Kelembaban Tanah" : 37
+            "Kelembaban Tanah (%)" : 37
         },
         {
             "id" : 6,
@@ -52,7 +52,7 @@
             "Suhu (C)": 26,
             "Kelembaban Udara (%)" : 91,
             "Tekanan Udara (hPa)" : 1002,
-            "Kelembaban Tanah" : 38
+            "Kelembaban Tanah (%)" : 38
         },
         {
             "id" : 7,
@@ -61,7 +61,7 @@
             "Suhu (C)": 25,
             "Kelembaban Udara (%)" : 93,
             "Tekanan Udara (hPa)" : 1003,
-            "Kelembaban Tanah" : 36
+            "Kelembaban Tanah (%)" : 36
         },
         {
             "id" : 8,
@@ -70,7 +70,7 @@
             "Suhu (C)": 28,
             "Kelembaban Udara (%)" : 76,
             "Tekanan Udara (hPa)" : 1012,
-            "Kelembaban Tanah" : 25
+            "Kelembaban Tanah (%)" : 25
         },
         {
             "id" : 9,
@@ -79,7 +79,7 @@
             "Suhu (C)": 29,
             "Kelembaban Udara (%)" : 77,
             "Tekanan Udara (hPa)" : 1012,
-            "Kelembaban Tanah" : 24
+            "Kelembaban Tanah (%)" : 24
         },
         {
             "id" : 10,
@@ -88,7 +88,7 @@
             "Suhu (C)": 29,
             "Kelembaban Udara (%)" : 78,
             "Tekanan Udara (hPa)" : 1013,
-            "Kelembaban Tanah" : 26
+            "Kelembaban Tanah (%)" : 26
         },
         {
             "id" : 11,
@@ -97,7 +97,7 @@
             "Suhu (C)": 28,
             "Kelembaban Udara (%)" : 74,
             "Tekanan Udara (hPa)" : 1012,
-            "Kelembaban Tanah" : 27
+            "Kelembaban Tanah (%)" : 27
         },
         {
             "id" : 12,
@@ -106,7 +106,7 @@
             "Suhu (C)": 28,
             "Kelembaban Udara (%)" : 75,
             "Tekanan Udara (hPa)" : 1013,
-            "Kelembaban Tanah" : 25
+            "Kelembaban Tanah (%)" : 25
         },
         {
             "id" : 13,
@@ -115,7 +115,7 @@
             "Suhu (C)": 29,
             "Kelembaban Udara (%)" : 76,
             "Tekanan Udara (hPa)" : 1013,
-            "Kelembaban Tanah" : 26
+            "Kelembaban Tanah (%)" : 26
         },
         {
             "id" : 14,
@@ -124,7 +124,7 @@
             "Suhu (C)": 28,
             "Kelembaban Udara (%)" : 74,
             "Tekanan Udara (hPa)" : 1012,
-            "Kelembaban Tanah" : 24
+            "Kelembaban Tanah (%)" : 24
         }
     ]
 }
