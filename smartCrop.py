@@ -82,7 +82,7 @@ async def crops_recommendation(environment_id: int):
             crop["kelembabanTanahMin (%)"], crop["kelembabanTanahMax (%)"], kelembabanTanahLingkungan)
         nilaiMinusTekananUdara = getNegativePoint(
             crop["tekananUdaraMin (hPa)"], crop["tekananUdaraMax (hPa)"], tekananUdaraLingkungan)
-        nilaiMinusHujan = abs(crop["hujan"] - hujanLingkungan)*10
+        nilaiMinusHujan = abs(crop["hujan"] - hujanLingkungan)*-10
 
         nilaiMinusAkhir = nilaiMinusIntensitasCahaya + \
             nilaiMinusSuhu + nilaiMinusKelembabanUdara + \
