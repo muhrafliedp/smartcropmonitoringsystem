@@ -4,7 +4,7 @@ from fastapi import FastAPI, HTTPException, status
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 
-with open("json/environment.json", "r") as read_file:
+with open("json/environments.json", "r") as read_file:
     environments = json.load(read_file)
 
 with open("json/crops.json", "r") as read_file:
@@ -22,8 +22,8 @@ def root():
     return ("Let's Farm !!")
 
 
-@app.get("/environment")
-async def read_all_data_environment():
+@app.get("/environments")
+async def read_all_data_environments():
     return environments
 
 
