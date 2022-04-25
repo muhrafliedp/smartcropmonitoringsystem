@@ -1,3 +1,4 @@
+from ast import Pass
 import uvicorn
 import json
 from fastapi import FastAPI, HTTPException, status
@@ -115,5 +116,9 @@ def getNegativePoint(minValue, maxValue, environmentValue):
     else:
         return environmentValue-minValue
 
+
+@app.get("/nutrients_recommendation/{environment_id}/{crop_id}")
+async def nutrients_recommendation(environment_id: int, crop_id):
+    return Pass
 
 # uvicorn smartCrop:app --reload
