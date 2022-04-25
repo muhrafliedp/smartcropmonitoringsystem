@@ -181,8 +181,4 @@ def getNegativePoint(minValue, maxValue, environmentValue):
         return environmentValue-minValue
 
 
-@app.get("/nutrients_recommendation/{environment_id}/{crop_id}")
-async def nutrients_recommendation(environment_id: int, crop_id):
-    return Pass
-
 # uvicorn smartCrop:app --reload
