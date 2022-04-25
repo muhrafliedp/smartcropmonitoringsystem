@@ -21,20 +21,68 @@
             "kelembabanTanahMin (%)" : 31,
             "informasiHarga" : "NA",
             "deskripsiLain " : "NA",
-            "nilaiPertumbuhan" : "baik",
-            "nilaiHasilPanen" : "biasa"
+            "nilaiPertumbuhan" : "biasa",
+            "nilaiHasilPanen" : "baik"
         },
         {
-            "id": 1,
-            "name": "Pupuk kilat",
+            "id": 3,
+            "name": "Majemuk Multipadi",
             "kelembabanUdaraMax (%)" : 100,
             "kelembabanUdaraMin (%)" : 81,
             "kelembabanTanahMax (%)" : 40,
             "kelembabanTanahMin (%)" : 31,
             "informasiHarga" : "NA",
             "deskripsiLain " : "NA",
+            "nilaiPertumbuhan" : "sangat baik (padi), baik (umum)",
+            "nilaiHasilPanen" : "sangat baik (padi), biasa (umum)"
+        },
+        {
+            "id": 4,
+            "name": "Multitonik Organik",
+            "kelembabanUdaraMax (%)" : 80,
+            "kelembabanUdaraMin (%)" : 70,
+            "kelembabanTanahMax (%)" : 30,
+            "kelembabanTanahMin (%)" : 20,
+            "informasiHarga" : "NA",
+            "deskripsiLain " : "NA",
+            "nilaiPertumbuhan" : "sangat baik",
+            "nilaiHasilPanen" : "baik"
+        },
+        {
+            "id": 5,
+            "name": "Nitrea",
+            "kelembabanUdaraMax (%)" : 80,
+            "kelembabanUdaraMin (%)" : 70,
+            "kelembabanTanahMax (%)" : 30,
+            "kelembabanTanahMin (%)" : 20,
+            "informasiHarga" : "NA",
+            "deskripsiLain " : "NA",
             "nilaiPertumbuhan" : "baik",
             "nilaiHasilPanen" : "biasa"
+        },
+        {
+            "id": 6,
+            "name": "Simba Agriculture Organic Liquid Fertilizer",
+            "kelembabanUdaraMax (%)" : 80,
+            "kelembabanUdaraMin (%)" : 70,
+            "kelembabanTanahMax (%)" : 30,
+            "kelembabanTanahMin (%)" : 20,
+            "informasiHarga" : "NA",
+            "deskripsiLain " : "NA",
+            "nilaiPertumbuhan" : "biasa",
+            "nilaiHasilPanen" : "sangat baik"
+        },
+        {
+            "id": 7,
+            "name": "Pupuk NPK",
+            "kelembabanUdaraMax (%)" : 80,
+            "kelembabanUdaraMin (%)" : 70,
+            "kelembabanTanahMax (%)" : 30,
+            "kelembabanTanahMin (%)" : 20,
+            "informasiHarga" : "NA",
+            "deskripsiLain " : "NA",
+            "nilaiPertumbuhan" : "baik",
+            "nilaiHasilPanen" : "baik"
         }
     ]
 }

@@ -70,6 +70,70 @@ async def read_nutrient_info(nutrient_id: int):
     )
 
 
+@app.get("/nutrients_recommendation/{crops_id}")
+async def nutrients_recommendation(crops_id: int):
+    soilHumidWeek = 0; airHumidWeek = 0; avgWeek = 0; totalData = 0
+    priorNutrients = []
+
+    for environment in environments["environments"]:
+        totalData += 1
+
+    for environment in environments['environments']:
+        if avgWeek >= (totalData - 7):
+            soilHumidWeek += environment['Kelembaban Tanah (%)']
+            airHumidWeek += environment['Kelembaban Udara (%)']
+            avgWeek += 1
+        else:
+            avgWeek += 1
+    
+    soilHumidAvgWeek = soilHumidWeek // 7
+    airHumidAvgWeek = airHumidWeek // 7
+
+    if crops_id == 1:
+        if (soilHumidAvgWeek > 30) and (airHumidAvgWeek > 80):
+            priorNutrients = ["1. Pupuk Kilat", "2. Pupuk Nasa", "3. Majemuk Multipadi"]
+            return priorNutrients
+        else:
+            priorNutrients = ["1. Multitonik Organik", "2. Nitrea", "3. Simba fertilizer", "4. Pupuk NPK"]
+            return priorNutrients
+    elif crops_id == 2:
+        if (soilHumidAvgWeek > 30) and (airHumidAvgWeek > 80):
+            priorNutrients = ["1. Pupuk Kilat", "2. Pupuk Nasa", "3. Majemuk Multipadi"]
+            return priorNutrients
+        else:
+            priorNutrients = ["1. Multitonik Organik", "2. Nitrea", "3. Simba fertilizer", "4. Pupuk NPK"]
+            return priorNutrients
+    elif crops_id == 3:
+        if (soilHumidAvgWeek > 30) and (airHumidAvgWeek > 80):
+            priorNutrients = ["1. Pupuk Nasa", "2. Pupuk Kilat", "3. Majemuk Multipadi"]
+            return priorNutrients
+        else:
+            priorNutrients = ["1. Multitonik Organik", "2. Nitrea", "3. Simba fertilizer", "4. Pupuk NPK"]
+            return priorNutrients
+    elif crops_id == 4:
+        if (soilHumidAvgWeek > 30) and (airHumidAvgWeek > 80):
+            priorNutrients = ["1. Majemuk Multipadi", "2. Pupuk Nasa", "3. Pupuk Kilat"]
+            return priorNutrients
+        else:
+            priorNutrients = ["1. Pupuk NPK", "2. Nitrea", "3. Simba fertilizer", "4. Multitonik Organik"]
+            return priorNutrients
+    elif crops_id == 5:
+        if (soilHumidAvgWeek > 30) and (airHumidAvgWeek > 80):
+            priorNutrients = ["1. Pupuk Kilat", "2. Pupuk Nasa", "3. Majemuk Multipadi"]
+            return priorNutrients
+        else:
+            priorNutrients = ["1. Simba fertilizer", "2. Nitrea", "3. Pupuk NPK", "4. Multitonik Organik"]
+            return priorNutrients
+    elif crops_id == 6:
+        if (soilHumidAvgWeek > 30) and (airHumidAvgWeek > 80):
+            priorNutrients = ["1. Pupuk NASA", "2. Pupuk Kilat", "3. Majemuk Multipadi"]
+            return priorNutrients
+        else:
+            priorNutrients = ["1. Nitrea", "2. Multitonik Organik", "3. Pupuk NPK", "4. Simba fertilizer"]
+            return priorNutrients   
+
+    
+
 @app.get("/crops_recommendation/{environment_id}")
 async def crops_recommendation(environment_id: int):
     for environment in environments['environments']:
