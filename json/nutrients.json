@@ -11,6 +11,30 @@
             "deskripsiLain " : "NA",
             "nilaiPertumbuhan" : "baik",
             "nilaiHasilPanen" : "biasa"
+        },
+        {
+            "id": 2,
+            "name": "Pupuk NASA",
+            "kelembabanUdaraMax (%)" : 100,
+            "kelembabanUdaraMin (%)" : 81,
+            "kelembabanTanahMax (%)" : 40,
+            "kelembabanTanahMin (%)" : 31,
+            "informasiHarga" : "NA",
+            "deskripsiLain " : "NA",
+            "nilaiPertumbuhan" : "baik",
+            "nilaiHasilPanen" : "biasa"
+        },
+        {
+            "id": 1,
+            "name": "Pupuk kilat",
+            "kelembabanUdaraMax (%)" : 100,
+            "kelembabanUdaraMin (%)" : 81,
+            "kelembabanTanahMax (%)" : 40,
+            "kelembabanTanahMin (%)" : 31,
+            "informasiHarga" : "NA",
+            "deskripsiLain " : "NA",
+            "nilaiPertumbuhan" : "baik",
+            "nilaiHasilPanen" : "biasa"
         }
     ]
 }

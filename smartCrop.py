@@ -36,6 +36,15 @@ async def read_all_data_crops():
 async def read_all_data_nutrients():
     return nutrients
 
+@app.get("/environment/{environment_id}")
+async def read_environment_info(environment_id: int):
+    for env in environments['environments']:
+        if env['id'] == environment_id:
+            return env
+    raise HTTPException(
+        status_code=404,
+        detail=f'data tidak ditemukan'
+    )
 
 @app.get("/crops/{crop_id}")
 async def read_crop_info(crop_id: int):
